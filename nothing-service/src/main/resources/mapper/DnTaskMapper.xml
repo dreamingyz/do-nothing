@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dre.nothing.service.dao.mapper.DnTaskMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dre.nothing.service.dao.domain.DnTask">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="description" property="description" />
+        <result column="parent_id" property="parentId" />
+        <result column="status" property="status" />
+        <result column="position" property="position" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="complete_time" property="completeTime" />
+        <result column="created_id" property="createdId" />
+        <result column="created_date" property="createdDate" />
+        <result column="updated_id" property="updatedId" />
+        <result column="updated_date" property="updatedDate" />
+        <result column="is_active" property="isActive" />
+        <result column="trace_id" property="traceId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, description, parent_id, status, position, start_time, end_time, complete_time, created_id, created_date, updated_id, updated_date, is_active, trace_id
+    </sql>
+
+</mapper>
